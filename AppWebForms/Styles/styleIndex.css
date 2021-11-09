@@ -1,0 +1,27 @@
+﻿.row > div{
+  
+  padding: 15px;
+  
+}
+
+
+.containerHoursConsult {
+    background-color: rgb(59, 175, 191, 0.3);
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+
+.fontTitle {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 70px;
+}
+.fontTitleColor {
+    color: #3bafbf;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+}
+.fontSubTitle {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+}
