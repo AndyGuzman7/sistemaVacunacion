@@ -1,0 +1,52 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway';
+}
+
+.imageBg {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5) ),url("https://images.pexels.com/photos/40568/medical-appointment-doctor-healthcare-40568.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    vertical-align: middle;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+    background-color: #3BAFBF;
+    color: white;
+    width: 200px;
+}
+
+.imageBg p {
+    font-size: 60px;
+    color: #fff;
+    position: relative;
+    text-align: center;
+    align-items: center;
+}
+
+.imageBg .textH {
+    font-size: 20px;
+    color: #fff;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.formInfo p {
+    font-size: 18px;
+    margin-right: 18px;
+    margin-bottom: 30px;
+}
+
+.formInfo2 {
+    background-color: rgba(151, 151, 151, 0.192);
+}
