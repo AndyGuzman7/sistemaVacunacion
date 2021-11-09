@@ -1,0 +1,6 @@
+E:\Archivos Andy\UNIVERSIDAD\4TO-SEMESTRE\PROGRAMACION WEB III\UNIDAD3\Nueva carpeta (3)\sistemaVacunacion\DAO.Model\bin\Debug\DAO.Model.dll
+E:\Archivos Andy\UNIVERSIDAD\4TO-SEMESTRE\PROGRAMACION WEB III\UNIDAD3\Nueva carpeta (3)\sistemaVacunacion\DAO.Model\bin\Debug\DAO.Model.pdb
+E:\Archivos Andy\UNIVERSIDAD\4TO-SEMESTRE\PROGRAMACION WEB III\UNIDAD3\Nueva carpeta (3)\sistemaVacunacion\DAO.Model\obj\Debug\DAO.Model.csproj.AssemblyReference.cache
+E:\Archivos Andy\UNIVERSIDAD\4TO-SEMESTRE\PROGRAMACION WEB III\UNIDAD3\Nueva carpeta (3)\sistemaVacunacion\DAO.Model\obj\Debug\DAO.Model.csproj.CoreCompileInputs.cache
+E:\Archivos Andy\UNIVERSIDAD\4TO-SEMESTRE\PROGRAMACION WEB III\UNIDAD3\Nueva carpeta (3)\sistemaVacunacion\DAO.Model\obj\Debug\DAO.Model.dll
+E:\Archivos Andy\UNIVERSIDAD\4TO-SEMESTRE\PROGRAMACION WEB III\UNIDAD3\Nueva carpeta (3)\sistemaVacunacion\DAO.Model\obj\Debug\DAO.Model.pdb

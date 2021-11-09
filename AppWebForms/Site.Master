@@ -13,9 +13,9 @@
 
 
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-    <link rel="stylesheet" href="Content/css/fontello.css">
-    <link rel="stylesheet" href="Content/css/styleHeader.css" />
-    <link rel="stylesheet" href="Content/css/styleIndex.css" />
+    <link rel="stylesheet" href="Styles/styleHeader.css"/>
+   
+    <link rel="stylesheet" href="Styles/styleIndex.css" />
     <script src="https://kit.fontawesome.com/0c46749f9f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

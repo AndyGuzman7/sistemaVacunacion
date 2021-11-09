@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="Class1.cs" />
     <Compile Include="IAppointment.cs" />
+    <Compile Include="IConsultation.cs" />
     <Compile Include="IDao.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
