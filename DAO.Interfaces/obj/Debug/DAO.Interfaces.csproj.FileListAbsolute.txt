@@ -7,3 +7,4 @@ E:\Archivos Andy\UNIVERSIDAD\4TO-SEMESTRE\PROGRAMACION WEB III\UNIDAD3\Nueva car
 E:\Archivos Andy\UNIVERSIDAD\4TO-SEMESTRE\PROGRAMACION WEB III\UNIDAD3\Nueva carpeta (3)\sistemaVacunacion\DAO.Interfaces\obj\Debug\DAO.Interfaces.csproj.CopyComplete
 E:\Archivos Andy\UNIVERSIDAD\4TO-SEMESTRE\PROGRAMACION WEB III\UNIDAD3\Nueva carpeta (3)\sistemaVacunacion\DAO.Interfaces\obj\Debug\DAO.Interfaces.dll
 E:\Archivos Andy\UNIVERSIDAD\4TO-SEMESTRE\PROGRAMACION WEB III\UNIDAD3\Nueva carpeta (3)\sistemaVacunacion\DAO.Interfaces\obj\Debug\DAO.Interfaces.pdb
+E:\Archivos Andy\UNIVERSIDAD\4TO-SEMESTRE\PROGRAMACION WEB III\UNIDAD3\Nueva carpeta (3)\sistemaVacunacion\DAO.Interfaces\bin\Debug\DAO.Model.dll.config

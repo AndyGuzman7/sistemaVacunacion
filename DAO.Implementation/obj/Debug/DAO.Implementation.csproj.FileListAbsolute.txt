@@ -8,3 +8,5 @@ E:\Archivos Andy\UNIVERSIDAD\4TO-SEMESTRE\PROGRAMACION WEB III\UNIDAD3\Nueva car
 E:\Archivos Andy\UNIVERSIDAD\4TO-SEMESTRE\PROGRAMACION WEB III\UNIDAD3\Nueva carpeta (3)\sistemaVacunacion\DAO.Implementation\obj\Debug\DAO.Implementation.csproj.CoreCompileInputs.cache
 E:\Archivos Andy\UNIVERSIDAD\4TO-SEMESTRE\PROGRAMACION WEB III\UNIDAD3\Nueva carpeta (3)\sistemaVacunacion\DAO.Implementation\obj\Debug\DAO.Implementation.dll
 E:\Archivos Andy\UNIVERSIDAD\4TO-SEMESTRE\PROGRAMACION WEB III\UNIDAD3\Nueva carpeta (3)\sistemaVacunacion\DAO.Implementation\obj\Debug\DAO.Implementation.pdb
+E:\Archivos Andy\UNIVERSIDAD\4TO-SEMESTRE\PROGRAMACION WEB III\UNIDAD3\Nueva carpeta (3)\sistemaVacunacion\DAO.Implementation\obj\Debug\DAO.Implementation.csproj.CopyComplete
+E:\Archivos Andy\UNIVERSIDAD\4TO-SEMESTRE\PROGRAMACION WEB III\UNIDAD3\Nueva carpeta (3)\sistemaVacunacion\DAO.Implementation\bin\Debug\DAO.Model.dll.config

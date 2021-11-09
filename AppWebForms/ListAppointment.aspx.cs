@@ -15,7 +15,7 @@ namespace AppWebForms
         List<Appointment> listAppointments = new List<Appointment>();
         Appointment appointment = new Appointment();
         AppointmentImpl appointmentImpl = new AppointmentImpl();
-
+        string hora;
 
         Consultation consultation = new Consultation();
         ConsultationImpl consultationImpl = new ConsultationImpl();
@@ -73,7 +73,7 @@ namespace AppWebForms
             ddlHoursApoitmet.Items.Clear();
             foreach (var item in listAppointments)
             {
-               listItem = new ListItem($" {item.StartTime.ToString("HH:MM")}-{item.EndTime.ToString("HH:MM")}",item.IdAppointment.ToString());
+                listItem = new ListItem($" {item.StartTime.ToString("HH:MM")}-{item.EndTime.ToString("HH:MM")}", item.IdAppointment.ToString());
                 ddlHoursApoitmet.Items.Add(listItem);
             }
         }
@@ -94,17 +94,17 @@ namespace AppWebForms
 
         public void AssigmentHours()
         {
-            Response.Write(consultation.StartTime.ToString());
-           /* int starTime = int.Parse(consultation.StartTime.ToString("H"));
-            int endTime = int.Parse(consultation.EndTime.ToString("H"));
+            //Response.Write(consultation.StartTime.ToString());
+            /* int starTime = int.Parse(consultation.StartTime.ToString("H"));
+             int endTime = int.Parse(consultation.EndTime.ToString("H"));
 
-            ListItem listItem = new ListItem();
-            ddlHoursApoitmet.Items.Clear();
-            for (int i = starTime; i < endTime; i++)
-            {
-                listItem = new ListItem($" {i}:00-{i + 1}:00", $"{starTime.ToString()}|{endTime.ToString()}");
-                ddlHoursApoitmet.Items.Add(listItem);
-            }*/
+             ListItem listItem = new ListItem();
+             ddlHoursApoitmet.Items.Clear();
+             for (int i = starTime; i < endTime; i++)
+             {
+                 listItem = new ListItem($" {i}:00-{i + 1}:00", $"{starTime.ToString()}|{endTime.ToString()}");
+                 ddlHoursApoitmet.Items.Add(listItem);
+             }*/
         }
 
         public void ConvertToConsultation(DataTable dt)
@@ -166,7 +166,34 @@ namespace AppWebForms
             return dt;
         }
 
+        protected void Button1_Click(object sender, EventArgs e)
+        {
 
+        }
+
+
+
+        protected void div_clickItem(object sender, EventArgs e)
+        {
+            Response.Write("sasd");
+        }
+
+        protected void btnReservation_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        protected void btnReservation_Click1(object sender, EventArgs e)
+        {
+           
+        }
+
+        protected void btnReservationNext_Click(object sender, EventArgs e)
+        {
+            string hora = lblHora.Text;
+            string id = txtIdHours.Value;
+            Response.Redirect("https://localhost:44325/AppointmentReservation");
+        }
     }
 
 

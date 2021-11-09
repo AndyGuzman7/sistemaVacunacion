@@ -15,6 +15,33 @@ namespace AppWebForms
     {
 
         /// <summary>
+        /// Control lblHora.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblHora;
+
+        /// <summary>
+        /// Control txtIdHours.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HiddenField txtIdHours;
+
+        /// <summary>
+        /// Control btnReservationNext.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnReservationNext;
+
+        /// <summary>
         /// Control ddlHoursApoitmet.
         /// </summary>
         /// <remarks>
@@ -24,13 +51,13 @@ namespace AppWebForms
         protected global::System.Web.UI.WebControls.DropDownList ddlHoursApoitmet;
 
         /// <summary>
-        /// Control DropDownList1.
+        /// Control Button1.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList1;
+        protected global::System.Web.UI.WebControls.Button Button1;
 
         /// <summary>
         /// Control DataList1.

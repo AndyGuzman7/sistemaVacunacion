@@ -25,7 +25,28 @@
     </div>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("a").click(function () {
+                var hora = $('#lblHora');
+                var txtHours = $('#txtHours');
+                
+                hora.text(txtHours.val())
+
+                var id = $('#lblValue');
+                
+                var idValue = $('#txtIdHours');
+                
+                idValue.val(id.val());
+                
+            });
+        });
+    </script>
     <style>
         .containerList {
             max-width: 1200px;
@@ -131,13 +152,62 @@
             margin: 20px 0;
             font-size: 15px;
         }
+
+
+        .modalStyle .styleHeader {
+            background-color: rebeccapurple;
+            background-image: url("https://images.pexels.com/photos/48604/pexels-photo-48604.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            width: 100%;
+            vertical-align: middle;
+            color: white;
+            border-radius: 4px 4px 0 0;
+        }
+
+            .modalStyle .styleHeader .modal-header {
+                background-color: rgba(0, 0, 10, 0.5);
+                padding: 10px;
+                width: 100%;
+                height: 100%;
+            }
     </style>
+
+    <a href="javascript:abrir_cerrar_reg();">
+        <h5>Registro</h5>
+    </a>
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog " role="document">
+            <div class="modal-content modalStyle">
+                <div class="styleHeader">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Hora de Consulta</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+
+                </div>
+                <div class="modal-body">
+                    <asp:Label ID="lblHora"  runat="server" ClientIDMode="Static"></asp:Label>
+                    
+                    <asp:HiddenField runat="server" Value="0" ID="txtIdHours"  ClientIDMode="Static"/>
+                    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                    <asp:Button ID="btnReservationNext" runat="server" CssClass="btn btn-primary" OnClick="btnReservationNext_Click"  />
+                    </div>
+            </div>
+        </div>
+    </div>
 
 
     <div class="container col-sm-12">
         <div class="containerInformation">
             <i class="fas fa-info-circle inlineBlockTag"></i>
-            <div style="width: 100%; display: inline-block;">
+            <div style="width: 100%; margin: 0 5px; display: inline-block;">
                 <div class="">
                     Seleccione el horario que mas le guste para su consulta.
                 </div>
@@ -150,7 +220,7 @@
         <div class="containerSearch">
 
 
-            <div class="form-group">
+            <div class="row form-group">
                 <div class="col-sm-3">
                     <label>Seleccione un Horario</label>
                 </div>
@@ -168,26 +238,37 @@
                 </div>
             </div>
 
-            <asp:DropDownList ID="DropDownList1" runat="server">
-            </asp:DropDownList>
 
         </div>
 
+
+
+    </div>
+    <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Button" />
+    <div class="buttons text-right">
+        Horarios disponibles de consulta
     </div>
 
+
     <div class=" container containerList">
-        <asp:DataList ID="DataList1" runat="server" CssClass="row containerItems" RepeatDirection="Horizontal" RepeatLayout="Flow">
+        <asp:DataList ID="DataList1" runat="server" CssClass="row containerItems" RepeatDirection="Horizontal" RepeatLayout="Flow" OnSelectedIndexChanged="div_clickItem">
             <ItemTemplate>
-                <div id="itemLoop" class="">
+                <a href="javascript:abrir_cerrar_reg();" style="text-decoration: none; color: black;">
 
-                    <div class="cards">
-                        <div class=" <% %> cardsContent ">
 
-                            <div class="col-6">
-                                <div style="font-size: 15px;">08:00-08:05</div>
-                            </div>
-                            <div class="col-6 " style="text-align: center">
-                                <!--<i style="font-size: 20px" class="far fa-check-square"></i>
+                    <div id="itemLoop" class="" data-toggle="modal" data-target="#exampleModal" onclick="javascript:abrir_cerrar_reg();">
+
+                        <div class="cards">
+                            <div class=" <% %> cardsContent ">
+
+                                <div class="col-6">
+                                    <div style="font-size: 15px;">08:00-08:05</div>
+                                    <input type="hidden" id="txtHours" value="08:00-08:05" />
+                                    <input type="hidden"  id="lblValue" value="1"  />
+                                   
+                                </div>
+                                <div class="col-6 " style="text-align: center">
+                                    <!--<i style="font-size: 20px" class="far fa-check-square"></i>
                                 <i style="font-size: 20px" class="far fa-check-square"></i>
                                 <i style="font-size: 20px" class="far fa-check-square"></i>
                                 <i style="font-size: 20px" class="far fa-check-square"></i>
@@ -198,28 +279,29 @@
                                 <i style="font-size: 20px" class="far fa-check-square"></i>-->
 
 
-                                <div style="font-size: 22px;">
-                                    10/12  <i style="font-size: 20px" class="fas fa-syringe"></i>
+                                    <div style="font-size: 22px;">
+                                        10/12  <i style="font-size: 20px" class="fas fa-syringe"></i>
+                                    </div>
+
+
                                 </div>
 
+                            </div>
+                        </div>
+                        <div class="containerState">
+                            <div style="width: 100%; height: 7px; margin: 10px 0; background-color: #808080">
+                                <div style="height: 7px; width: 40%; background-color: royalblue">
+                                </div>
 
                             </div>
 
-                        </div>
-                    </div>
-                    <div class="containerState">
-                        <div style="width: 100%; height: 7px; margin: 10px 0; background-color: #808080">
-                            <div style="height: 7px; width: 40%; background-color: royalblue">
-                            </div>
 
                         </div>
-
-
                     </div>
-                </div>
-
+                </a>
             </ItemTemplate>
         </asp:DataList>
     </div>
+
 
 </asp:Content>
