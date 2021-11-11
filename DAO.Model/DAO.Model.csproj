@@ -53,9 +53,12 @@
   <ItemGroup>
     <Compile Include="Appointment.cs" />
     <Compile Include="Class1.cs" />
-    <Compile Include="Consultation.cs" />
+    <Compile Include="ConsultationM.cs" />
+    <Compile Include="DataClass.cs" />
     <Compile Include="EmailService.cs" />
+    <Compile Include="Employee.cs" />
     <Compile Include="GenerateCode.cs" />
+    <Compile Include="NurseData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

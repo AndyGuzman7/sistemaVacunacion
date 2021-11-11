@@ -13,15 +13,16 @@
 
 
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-    <link rel="stylesheet" href="Styles/styleHeader.css"/>
-   
+    <link rel="stylesheet" href="Styles/styleHeader.css" />
+    <link rel="stylesheet" href="Styles/styleFooter.css" />
+
     <link rel="stylesheet" href="Styles/styleIndex.css" />
     <script src="https://kit.fontawesome.com/0c46749f9f.js" crossorigin="anonymous"></script>
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    
+
 
 </head>
 <body>
@@ -30,15 +31,15 @@
             <header runat="server">
                 <div class="containerHeader " runat="server">
                     <div class="transparentHeader" runat="server">
-                        <asp:Image runat="server" Height="80px" ImageUrl="~/upload/logo.png" />
+                        <asp:Image runat="server" Height="80px" ImageUrl="~/Images/VitalityLogo2White.png" />
                         <input type="checkbox" id="menu-bar" />
                         <label for="menu-bar"><i class="fas fa-bars"></i></label>
                         <nav class="menu" runat="server">
                             <a>INICIO</a>
                             <a>LISTA DE CONSULTAS</a>
-                            
-                                <asp:Button runat="server" BackColor="#3bafbf" BorderColor="#3bafbf" Width="200px" Height="50px" Text="HACER UNA CITA" />
-                           
+
+                            <asp:Button runat="server" BackColor="#3bafbf" BorderColor="#3bafbf" Width="200px" Height="50px" Text="HACER UNA CITA" />
+
                         </nav>
                     </div>
                     <div class="container">
@@ -57,11 +58,46 @@
             </div>
 
             <hr />
-            <footer>
-                <p>&copy; <%: DateTime.Now.Year %> - Mi aplicación ASP.NET</p>
+            <footer class="nb-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="about">
+                                <asp:Image runat="server" ImageUrl="~/Images/VitalityLogo1.png" width="175px" height="100px" class="img-responsive center-block" alt=""/>
+                                <p>La mejor clinica a tu servicio.</p>
+
+                                <div class="social-media">
+                                    <ul class="list-inline">
+                                        <li style="display: inline; font-size: 48px;"><a href="https://www.facebook.com/SaludDeportesBo/" target="_blank" title=""><i class="fa fa-facebook"></i></a></li>
+                                        <li style="display: inline; font-size: 48px;"><a href="https://twitter.com/SaludDeportesBo" target="_blank" title=""><i class="fa fa-twitter"></i></a></li>
+                                        <li style="display: inline; font-size: 48px;"><a href="https://www.minsalud.gob.bo/" target="_blank" title=""><i class="fa fa-globe"></i></a></li>
+                                        <li style="display: inline; font-size: 48px;"><a href="https://www.instagram.com/saluddeportesbo/" target="_blank" title=""><i class="fa fa-instagram"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+                <section class="copyright">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <p>Copyright © 2021. Vitality.</p>
+                            </div>
+                            <div class="col-sm-6"></div>
+                        </div>
+                    </div>
+                </section>
             </footer>
         </div>
+
     </form>
+
+
 
 
 </body>

@@ -12,7 +12,7 @@ namespace DAO.Implementacion
     class DataBase
     {
 
-        private static string connectionString = @"data source = localhost\SQLEXPRESS; initial catalog = SystemVacunation; user id= root; password=Univalle";
+        private static string connectionString = @"data source = DESKTOP-2N6KKH4\SQLEXPRESS; initial catalog = SystemVacunation; user id = sa; password = Univalle2021";
         public static SqlCommand CreateBasicCommand()
         {
             SqlConnection connection = new SqlConnection(connectionString);
@@ -154,20 +154,46 @@ namespace DAO.Implementacion
         }
 
 
-        public static List<SqlCommand> CreateBasciComand(int n)
+        public static List<SqlCommand> CreateNBasicCommand(int n)
         {
             List<SqlCommand> res = new List<SqlCommand>();
-            SqlConnection sqlConnection = new SqlConnection(connectionString);
-            for (int i = 0; i < n; i++)
+            SqlConnection connection = new SqlConnection(connectionString);
+
+            for (int i = 1; i <= n; i++)
             {
-                SqlCommand sqlCommand = new SqlCommand();
-                sqlCommand.Connection = sqlConnection;
-                res.Add(sqlCommand);
+                SqlCommand command = new SqlCommand();
+                command.Connection = connection;
+                res.Add(command);
             }
+
             return res;
-
-
         }
+        public static void ExecuteNBasicCommand(List<SqlCommand> commands)
+        {
+            SqlTransaction transaction = null;
+            SqlCommand command1 = commands[0];
+            try
+            {
+                command1.Connection.Open();
+                transaction = command1.Connection.BeginTransaction();
 
+                foreach (SqlCommand item in commands)
+                {
+                    item.Transaction = transaction;
+                    item.ExecuteNonQuery();
+                }
+
+                transaction.Commit();
+            }
+            catch (Exception ex)
+            {
+                transaction.Rollback();
+                throw ex;
+            }
+            finally
+            {
+                command1.Connection.Close();
+            }
+        }
     }
 }
