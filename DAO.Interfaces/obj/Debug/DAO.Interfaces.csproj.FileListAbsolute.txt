@@ -8,3 +8,13 @@ E:\Archivos Andy\UNIVERSIDAD\4TO-SEMESTRE\PROGRAMACION WEB III\UNIDAD3\Nueva car
 E:\Archivos Andy\UNIVERSIDAD\4TO-SEMESTRE\PROGRAMACION WEB III\UNIDAD3\Nueva carpeta (3)\sistemaVacunacion\DAO.Interfaces\obj\Debug\DAO.Interfaces.dll
 E:\Archivos Andy\UNIVERSIDAD\4TO-SEMESTRE\PROGRAMACION WEB III\UNIDAD3\Nueva carpeta (3)\sistemaVacunacion\DAO.Interfaces\obj\Debug\DAO.Interfaces.pdb
 E:\Archivos Andy\UNIVERSIDAD\4TO-SEMESTRE\PROGRAMACION WEB III\UNIDAD3\Nueva carpeta (3)\sistemaVacunacion\DAO.Interfaces\bin\Debug\DAO.Model.dll.config
+E:\ProgramacionWebIII\proyecto-WebForms\sistemaVacunacion\DAO.Interfaces\bin\Debug\DAO.Interfaces.dll
+E:\ProgramacionWebIII\proyecto-WebForms\sistemaVacunacion\DAO.Interfaces\bin\Debug\DAO.Interfaces.pdb
+E:\ProgramacionWebIII\proyecto-WebForms\sistemaVacunacion\DAO.Interfaces\bin\Debug\DAO.Model.dll
+E:\ProgramacionWebIII\proyecto-WebForms\sistemaVacunacion\DAO.Interfaces\bin\Debug\DAO.Model.pdb
+E:\ProgramacionWebIII\proyecto-WebForms\sistemaVacunacion\DAO.Interfaces\bin\Debug\DAO.Model.dll.config
+E:\ProgramacionWebIII\proyecto-WebForms\sistemaVacunacion\DAO.Interfaces\obj\Debug\DAO.Interfaces.csproj.AssemblyReference.cache
+E:\ProgramacionWebIII\proyecto-WebForms\sistemaVacunacion\DAO.Interfaces\obj\Debug\DAO.Interfaces.csproj.CoreCompileInputs.cache
+E:\ProgramacionWebIII\proyecto-WebForms\sistemaVacunacion\DAO.Interfaces\obj\Debug\DAO.Interfaces.csproj.CopyComplete
+E:\ProgramacionWebIII\proyecto-WebForms\sistemaVacunacion\DAO.Interfaces\obj\Debug\DAO.Interfaces.dll
+E:\ProgramacionWebIII\proyecto-WebForms\sistemaVacunacion\DAO.Interfaces\obj\Debug\DAO.Interfaces.pdb

@@ -109,12 +109,12 @@ namespace AppWebForms
 
         public void ConvertToConsultation(DataTable dt)
         {
-            consultation = new Consultation(int.Parse(dt.Rows[0][0].ToString()),
+            /*consultation = new Consultation(int.Parse(dt.Rows[0][0].ToString()),
                                             DateTime.Parse(dt.Rows[0][1].ToString()),
                                             TimeSpan.Parse(dt.Rows[0][2].ToString()),
                                             TimeSpan.Parse(dt.Rows[0][3].ToString()),
                                             int.Parse(dt.Rows[0][4].ToString())
-                );
+                );*/
         }
 
         DataTable SelectAppointment()

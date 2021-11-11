@@ -107,6 +107,8 @@
   <ItemGroup>
     <Content Include="About.aspx" />
     <Content Include="AppointmentReservation.aspx" />
+    <Content Include="Consultation.aspx" />
+    <Content Include="Consultation1.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -130,7 +132,12 @@
     <Content Include="Images\bg-admin.jpg" />
     <Content Include="Images\bg-nurse1.jpg" />
     <Content Include="Images\nurse1.jpg" />
+    <Content Include="Images\nurseIcon.png" />
+    <Content Include="Images\selectImg.png" />
     <Content Include="Images\vaccineN.jpg" />
+    <Content Include="Images\VitalityLogo1.png" />
+    <Content Include="Images\VitalityLogo2.png" />
+    <Content Include="Images\VitalityLogo2White.png" />
     <Content Include="Index.aspx" />
     <Content Include="ListAppointment.aspx" />
     <Content Include="LoginAdmin.aspx" />
@@ -168,8 +175,10 @@
     <Content Include="Styles\banner.css" />
     <Content Include="Styles\menu.css" />
     <Content Include="Styles\SAppointmentReservation.css" />
+    <Content Include="Styles\SConsultation.css" />
     <Content Include="Styles\SloginAdmin.css" />
     <Content Include="Styles\SloginNurse.css" />
+    <Content Include="Styles\styleFooter.css" />
     <Content Include="Styles\styleHeader.css" />
     <Content Include="Styles\styleIndex.css" />
     <Content Include="Styles\styleListApoitment.css" />
@@ -195,6 +204,20 @@
       <DependentUpon>About.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Consultation.aspx.cs">
+      <DependentUpon>Consultation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Consultation.aspx.designer.cs">
+      <DependentUpon>Consultation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Consultation1.aspx.cs">
+      <DependentUpon>Consultation1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Consultation1.aspx.designer.cs">
+      <DependentUpon>Consultation1.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

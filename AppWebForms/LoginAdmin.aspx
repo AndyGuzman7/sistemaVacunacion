@@ -22,22 +22,21 @@
           <h4 class="title text-center mt-5">
               Bienvenido!
           </h4>
-          <form class="form-box px-3">
+          <form class="form-box px-3" runat="server">
             <div class="form-input">
               <span><i class="fa fa-user"></i></span>
-              <input type="text" name="" placeholder="Nombre de usuario" tabindex="10" required="required" />
+               <asp:TextBox ID="txtUsername"  name="" placeholder="Nombre de usuario" runat="server" required="required"></asp:TextBox>
             </div>
             <div class="form-input">
               <span><i class="fa fa-key"></i></span>
-              <input type="password" name="" placeholder="Contraseña" required="required"/>
+                <asp:TextBox ID="txtPassword" TextMode="Password" placeholder="Contraseña" required="required" runat="server"></asp:TextBox>
             </div>
-
+              <asp:Label ID="lblErrorLogin" runat="server" ForeColor="Red" Text=""></asp:Label>
 
             <div class="mb-5">
-              <button type="submit" class="btn btn-block text-uppercase">
-                Iniciar Sesion</button>
-            </div>
+                <asp:Button ID="btnLoginAdmin" OnClick="btnLoginAdmin_Click" CssClass="btn btn-block btn-info text-uppercase" runat="server" Text="Iniciar Sesion" />
 
+            </div>
             
           </form>
         </div>
